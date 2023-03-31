@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/paper_fibers.png');
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/ep_naturalwhite.png');
   background-attachment: fixed;
   background-color: #f4e9d8;
   color: #333;
@@ -15,8 +15,7 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   min-height: 100vh;
   padding: 2rem;
   text-align: center;
@@ -40,6 +39,8 @@ button {
   padding: 12px 24px;
   cursor: pointer;
   outline: none;
+  width: 200px; /* Adjust this value as needed */
+  margin: 0 auto; /* Center the button horizontally */
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -71,7 +72,7 @@ a:hover {
 
 .doodle-top-left {
   position: fixed;
-  top: 20px;
+  top: 40px;
   left: 20px;
 }
 
@@ -79,4 +80,110 @@ a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .doodle-top-left {
+    width: 50px;
+    height: 50px;
+    top: 60px;
+    left: 20px;
+  }
+
+  .doodle-bottom-right {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+
+.year-form {
+  margin-top: 2rem; /* Add margin-top to position the form towards the top */
+  text-align: center;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1000; /* Keep the navbar on top of other elements */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+.page-content {
+  padding-top: 4rem; /* Add some space to account for the fixed navbar */
+}
+
+.form-label {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 1rem; /* Add margin-right to create spacing between the label and input */
+}
+
+.form-input {
+  font-size: 1.5rem;
+  padding: 0.5rem; 
+  width: 100%;
+  max-width: 120px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  outline: none;
+  margin-left: 1rem;
+}
+
+.form-input:focus {
+  border-color: #1a73e8;
+}
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.event-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.form-container {
+  margin: 2rem; /* Adjust the margin-top value to position the form elements closer to the top */
+  text-align: center; /* Center the form elements horizontally */
 }

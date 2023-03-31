@@ -11,7 +11,8 @@ const Doodles = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="50" cy="50" r="50" fill="#f4e9d8" />
+        <circle cx="50" cy="50" r="50" fill="none" />{" "}
+        {/* Change fill to "none" */}
         <circle cx="50" cy="50" r="30" stroke="#333" strokeWidth="2" />
         <circle cx="30" cy="30" r="5" fill="#333" />
         <circle cx="70" cy="30" r="5" fill="#333" />
@@ -31,7 +32,8 @@ const Doodles = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="75" cy="75" r="75" fill="#f4e9d8" />
+        <circle cx="75" cy="75" r="75" fill="none" />{" "}
+        {/* Change fill to "none" */}
         <circle cx="75" cy="75" r="45" stroke="#333" strokeWidth="2" />
         <circle cx="45" cy="45" r="7" fill="#333" />
         <circle cx="105" cy="45" r="7" fill="#333" />
